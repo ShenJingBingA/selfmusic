@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>音乐播放器</title>
+    <link rel="stylesheet" type="text/css" href="font/iconfont.css">
+    <link rel="stylesheet" href="css/music.css">
+    <script src="js/music.js"></script>
+</head>
+<body>
+    <div class="box">
+        <audio src="music/七月上.mp3" id="audio"></audio>
+        <div class="biglist">
+            <div class="list choose">
+                <h2>播放列表</h2>
+                <ul>
+                    <li>
+                        <span>播放状态</span>
+                        <span>歌曲名字</span>
+                        <span>歌手</span>
+                        <span>操作</span>
+                    </li>
+                </ul>
+                <ul class="ul">
+                    <!--<li>-->
+                    <!--<span class="iconfont"></span>-->
+                    <!--<span>${obj.name}</span>-->
+                    <!--<span>${obj.author}</span>-->
+                    <!--<span class="iconfont icon-iconfont05"></span>-->
+                    <!--</li>-->
+                </ul>
+            </div>
+            <div class="list">
+                <ul class="lyric">
+
+                </ul>
+                <canvas id="canvas" width="800" height="250"></canvas>
+            </div>
+        </div>
+        <div class="button">
+            <div class="function">
+                <ul>
+                    <li class="previous">
+                        <span class="iconfont icon-shangyishou"></span>
+                    </li>
+                    <li class="play">
+                        <span class="iconfont icon-bofang"></span>
+                    </li>
+                    <li class="next">
+                        <span class="iconfont icon-xiayishou"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="icon"></div>
+            <div class="stutus">
+                <div class="author">
+                    <span>Jam</span>
+                    <span>----</span>
+                    <span>七月上</span>
+                </div>
+                <div class="time">
+                    <span>0:00</span>
+                    <span>/</span>
+                    <span>0:00</span>
+                </div>
+                <div class="progress">
+                    <div class="bar">
+                        <div class="load"></div>
+                        <div class="played"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="volume">
+                <div class="vol">
+                    <span class="iconfont icon-shengyin"></span>
+                </div>
+                <div class="progress">
+                    <div class="bar">
+                        <div class="load"></div>
+                        <div class="played"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="menu">
+                <span class="iconfont icon-caidan"></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src="js/main.js"></script>

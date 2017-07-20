@@ -1,0 +1,259 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+body,html{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.box{
+    width: 1000px;
+    height: 100%;
+    margin: 0 auto;
+    background-image: url("../bigimg/big1.jpg");
+    background-size: cover;
+    background-position: center center;
+}
+.box .biglist{
+    width: 100%;
+    height: 85%;
+    position: relative;
+}
+.box .list{
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    padding-top:20px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: absolute;
+    left:0;
+    top:0;
+}
+.box .biglist div:first-child{
+    background: rgba(0,0,0,0.5);
+    z-index: 50;
+}
+.box .biglist div:last-child{
+    background: rgba(0,0,0,0.2);
+}
+.box .biglist .choose{
+    display: none;
+}
+.box .list h2{
+    color: #fff;
+}
+.box .list ul{
+    width: 100%;
+    height: auto;
+}
+.box .list ul li{
+    width: 100%;
+    height: 40px;
+}
+.box .list ul li.active{
+    background: rgba(255,255,255,0.4);
+}
+.box .list ul li span{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    line-height: 40px;
+    color: #fff;
+}
+/*歌词的样式*/
+.box .biglist .lyric{
+    height: 300px;
+    width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 20px;
+}
+.box .biglist .lyric li{
+    height: 28px;
+    color: #fff;
+}
+/*底部*/
+.box .button{
+    width: 100%;
+    height: 15%;
+    background: rgba(0,0,0,0.4);
+}
+/*播放按钮*/
+.box .button .function{
+    width: 18%;
+    height: 100%;
+    float: left;
+}
+.box .button .function ul{
+    width: 100%;
+    height: 100%;
+    line-height: 100px;
+}
+.box .button .function ul li{
+    width: 33.333333%;
+    height: 100%;
+    float: left;
+}
+.box .button .function ul li span{
+    font-size: 30px;
+    color: #cccccc;
+}
+.box .button .function ul li.play{
+    line-height: 108px;
+}
+.box .button .function ul li.play span{
+    font-size: 38px;
+}
+.box .button .function ul li:hover span{
+    color: #fffdef;
+}
+/*图片*/
+.box .button .icon{
+    width: 10%;
+    height: 100%;
+    float: left;
+    border-radius: 50%;
+    background-image: url("../img/img1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+/*进度条*/
+.box .button .stutus{
+    width: 45%;
+    height: 100%;
+    /*background: blue;*/
+    float: left;
+}
+.box .button .stutus .author,.box .button .stutus .time{
+    width: 50%;
+    height: 50%;
+    float: left;
+    line-height: 50px;
+    text-align: center;
+}
+.box .button .stutus .author span{
+    color: #fff;
+}
+.box .button .stutus .time span{
+    color: #CDCAC8;
+}
+.box .button .stutus .progress{
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+.box .button .stutus .progress .bar{
+    width: 90%;
+    height: 10px;
+    margin: 11px auto;
+    background: tan;
+    position: relative;
+    border-radius: 6px;
+}
+.box .button .stutus .progress .bar .load{
+    width: 0;
+    transition: all 2s;
+    height: 100%;
+    background: #009F8A;
+    position: absolute;
+    left: 0;
+    top:0;
+    border-radius: 6px;
+    z-index: 2;
+}
+.box .button .stutus .progress .bar .played{
+    width: 0;
+    height: 100%;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    top:0;
+    border-radius: 6px;
+    z-index: 4;
+}
+.box .button .stutus .progress .bar .circle{
+    width: 20px;
+    height: 20px;
+    background: #f4f4f4;
+    position: absolute;
+    left: -10px;
+    top:-5px;
+    border-radius: 50%;
+    z-index: 100;
+}
+/*声音*/
+.box .button .volume{
+    width: 22%;
+    height: 100%;
+    float: left;
+}
+.box .button .volume .vol{
+    width: 12%;
+    height: 100%;
+    float: left;
+    text-align: center;
+    line-height: 120px;
+}
+.box .button .volume .vol span{
+    font-size: 20px;
+    color: #fff;
+}
+.box .button .volume .progress{
+    width: 88%;
+    height: 100%;
+    float: left;
+}
+.box .button .volume .progress .bar{
+    width: 90%;
+    height: 10px;
+    margin: 56px auto;
+    background: tan;
+    position: relative;
+    border-radius: 6px;
+}
+.box .button .volume .progress .bar .load{
+    width: 100%;
+    height: 100%;
+    background: #CDCAC8;
+    position: absolute;
+    left: 0;
+    top:0;
+    border-radius: 6px;
+    z-index: 2;
+}
+.box .button .volume .progress .bar .played{
+    width: 100%;
+    height: 100%;
+    background: orangered;
+    position: absolute;
+    left: 0;
+    top:0;
+    border-radius: 6px;
+    z-index: 4;
+}
+.box .button .volume  .progress .bar .circle{
+    width: 20px;
+    height: 20px;
+    background: #f4f4f4;
+    position: absolute;
+    left: 158px;
+    top:-5px;
+    border-radius: 50%;
+    z-index: 100;
+}
+/*菜单*/
+.box .button .menu{
+     width: 5%;
+     height: 100%;
+     float: left;
+    text-align: center;
+    line-height: 100px;
+}
+.box .button .menu span{
+    color: #f3f3f3;
+}
